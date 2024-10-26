@@ -1,0 +1,37 @@
+.roboto-regular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+.card {
+    background: #303030;
+    margin: 0;
+    padding: 10px 10px;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+
+    box-shadow: 0 8px 0 #1e1e1e;
+    transform: translate(0px, -8px);
+    transition: 0.15s ease-out;
+
+    &:hover {
+        background: #353535;
+        box-shadow: 0 0px 0 #1e1e1e;
+        transform: translate(0px, 0px);
+    }
+
+    & img {
+        max-width: 130px;
+        max-height: 130px;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+}
