@@ -11,8 +11,8 @@ export default function useCharacters() {
             .then((data) => {
                 setMaxPage(data.info.pages);
                 setCharacters(data.results);
-            });
-        // .catch(error => console.log({ Error }))
+            })
+            .catch((error) => console.log({ error }));
     }, [page]);
 
     const nextPage = () => {

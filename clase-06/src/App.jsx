@@ -1,9 +1,10 @@
 import './App.css';
+import Get from './components/Get';
 
 function App() {
     return (
         <>
-            <div></div>
+            <Get />
         </>
     );
 }
