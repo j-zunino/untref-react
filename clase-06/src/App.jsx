@@ -1,11 +1,13 @@
 import './App.css';
-import Get from './components/Get';
+import Form from './components/Form';
+import Comments from './components/Comments';
 
 function App() {
     return (
-        <>
-            <Get />
-        </>
+        <div className="App">
+            <Comments />
+            <Form />
+        </div>
     );
 }
 
