@@ -25,7 +25,12 @@ const Form = () => {
         })
             .then((response) => response.json())
             .then((data) => {
-                alert('Comentario añadido con éxito!');
+                alert(`
+Comentario añadido con éxito!
+Nombre: ${data.name}
+Email: ${data.email}
+Mensaje: ${data.body}
+                `);
                 console.log('Nuevo comentario:', data);
                 setFormData({ postId: 0, name: '', email: '', body: '' });
             })
