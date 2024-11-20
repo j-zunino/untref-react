@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Card from './components/Card';
+import Card from '../components/Card';
 
 const Home = () => {
     const [cocktails, setCocktails] = useState([]);
@@ -17,13 +17,16 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="grid">
-            {cocktails.length
-                ? cocktails.map((cocktail) => (
-                      <Card key={cocktail.idDrink} data={cocktail} />
-                  ))
-                : null}
-        </div>
+        <>
+            <h1>Mas que solo bebidas, festejemos el encuentro.</h1>
+            <div className="grid">
+                {cocktails.length
+                    ? cocktails.map((cocktail) => (
+                          <Card key={cocktail.idDrink} data={cocktail} />
+                      ))
+                    : null}
+            </div>
+        </>
     );
 };
 
